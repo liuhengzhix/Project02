@@ -31,7 +31,7 @@ import java.io.IOException;
  */
 public class Demo01BufferedReader {
     public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new FileReader("D:\\bilibili\\BufferedReader.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("D:\\bili\\BufferedReader.txt"));
         String line;
         /*
             在不知道文件内容有多少时侯，用while循环一行一行的读

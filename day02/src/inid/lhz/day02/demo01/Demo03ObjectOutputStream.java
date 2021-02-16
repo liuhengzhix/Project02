@@ -1,6 +1,5 @@
 package inid.lhz.day02.demo01;
 
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
@@ -25,7 +24,7 @@ import java.io.ObjectOutputStream;
  */
 public class Demo03ObjectOutputStream {
     public static void main(String[] args) throws IOException {
-        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("D:\\bilibili\\person.txt"));
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("D:\\bili\\person.txt"));
         oos.writeObject(new Person("小黑",18)); //序列化
         oos.close();
     }

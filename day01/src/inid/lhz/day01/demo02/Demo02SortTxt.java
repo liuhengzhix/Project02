@@ -23,8 +23,8 @@ import java.util.Set;
 public class Demo02SortTxt {
     public static void main(String[] args) throws IOException {
         HashMap<String, String> map = new HashMap<>();
-        BufferedReader br = new BufferedReader(new FileReader("D:\\bilibili\\in.txt"));
-        BufferedWriter bw = new BufferedWriter(new FileWriter("D:\\bilibili\\out.txt"));
+        BufferedReader br = new BufferedReader(new FileReader("D:\\bili\\in.txt"));
+        BufferedWriter bw = new BufferedWriter(new FileWriter("D:\\bili\\out.txt"));
         String line;
         while ((line = br.readLine()) != null) {
             //5.对读取到的文本进行切割, 获取行中的序号和文本内容

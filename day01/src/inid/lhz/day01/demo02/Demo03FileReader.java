@@ -9,7 +9,7 @@ import java.io.IOException;
  */
 public class Demo03FileReader {
     public static void main(String[] args) throws IOException {
-        FileReader fr = new FileReader("D:\\bilibili\\GBK.txt");
+        FileReader fr = new FileReader("D:\\bili\\GBK.txt");
         int len = 0;
         while ((len = fr.read()) != -1) {
             System.out.println(len);

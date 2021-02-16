@@ -8,7 +8,7 @@ import java.io.OutputStreamWriter;
     java.io.OutputStreamWriter extends Writer
         OutputStreamWriter：是字符流通向字节流的桥梁：可使用指定的charset将要写入流中的字符编码成字节。(编码：把能看懂的变成看不懂)
 
-    继续自父类的共性成员方法：
+    继承自父类的共性成员方法：
         - void write(int c) 写入单个字符。
         - void write(char[] cbuf) 写入字符数组。
         - abstract void write(char[] cbuf， int off， int len) 写入字符数组的某一部分，off数组的开始索引，len写的字符个数。
@@ -30,8 +30,8 @@ import java.io.OutputStreamWriter;
  */
 public class Demo01OutputStreamWrite {
     public static void main(String[] args) throws IOException {
-        //FileOutputStream("D:\\bilibili\\fos.txt")文件如果不存在会自动创建
-        OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("D:\\bilibili\\fos.txt"));
+        //FileOutputStream("D:\\bili\\fos.txt")文件如果不存在会自动创建
+        OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("D:\\bili\\fos.txt"));
         osw.write("你好");
         osw.flush();
         osw.close();

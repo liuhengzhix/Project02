@@ -30,7 +30,7 @@ import java.io.ObjectInputStream;
  */
 public class Demo04ObjectInputStream {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("D:\\bilibili\\person.txt"));
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("D:\\bili\\person.txt"));
         Object p = ois.readObject(); //用Object来接收返回值
         ois.close();
         //4.使用读取出来的对象(打印)

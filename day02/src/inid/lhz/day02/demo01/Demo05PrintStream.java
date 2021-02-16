@@ -29,7 +29,7 @@ import java.io.PrintStream;
  */
 public class Demo05PrintStream {
     public static void main(String[] args) throws FileNotFoundException {
-        PrintStream ps = new PrintStream("D:\\bilibili\\tvb.txt"); //文件没有可以自动创建，但是路径不对就会抛异常
+        PrintStream ps = new PrintStream("D:\\bili\\tvb.txt"); //文件没有可以自动创建，但是路径不对就会抛异常
         ps.write(97); //这一句会查询编码表
         ps.println(); //换个行
         ps.println("println"); //这一句原样输出到文件里
