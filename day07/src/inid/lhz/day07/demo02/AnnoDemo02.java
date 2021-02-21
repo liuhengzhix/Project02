@@ -18,7 +18,7 @@ public class AnnoDemo02 {
         //有缺陷
     }
 
-    @MyAnno(age = 2, name = "asdf")
+    @MyAnno(age = 2, name = "adsf")
     public void show02() {
         //替代show01方法
     }
