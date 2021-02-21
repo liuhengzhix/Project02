@@ -1,6 +1,5 @@
 package inid.lhz.day07.Reflect;
 
-import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Method;
 import java.util.Properties;
@@ -8,6 +7,7 @@ import java.util.Properties;
 /**
  * 框架类
  */
+@SuppressWarnings("all")
 public class ReflectTest {
     public static void main(String[] args) throws Exception {
         /*
@@ -29,12 +29,13 @@ public class ReflectTest {
 
         //3.加载该类进内存
         Class aClass = Class.forName(className);
-        //4.创建对象
-        Object o = aClass.newInstance();
+        //4.创建对象 newInstance方法已过时
+//        Object o = aClass.newInstance();
+        Student stu = new Student();
         //5.获取方法对象
         Method eat = aClass.getMethod(methodName);
         //6.执行方法
-        eat.invoke(o);
+        eat.invoke(stu);
 
 
     }
